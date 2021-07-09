@@ -65,3 +65,35 @@
 // const dragonsTags: MaybePopularTag = "dinosaur";
 //
 //// Any/Void/Never/Unknown
+// Void: nothing is returned - set of undefined or null
+// Any: should not use - any type turns off TS checks - not a soln but start of bigger problems
+// Never: function with never cannot be executed to the end
+// Unknown: from TS3 - cannot assign unknown directly in other type - good alternative for "any"
+// Bonus: "as" operator makes type assertion
+// const doSomething = (): void => {
+//     console.log("doSomething");
+// };
+
+// let foo: void = null;
+// // foo = "foo";
+
+// const doSomethingElse = (): never => {
+//     // console.log("doSomethingElse");
+//     throw "never";
+// };
+
+// let vAny: any = 10;
+// let vUnknown: unknown = 10;
+
+// let s1: string = vAny;
+// // let s2: string = vUnknown; --> Error: Type 'unknown' not assignable to type 'string'
+// let s2: string = vUnknown as string;
+
+// console.log(vAny.foo());
+// // console.log(vUnknown.foo()); --> Error
+
+// let pageNumber: string = "1";
+// // let numericPageNumber: number = pageNumber as number; --> Error: Conversion/assertion from 'string' to 'number' maybe mistake --> help to solve issue
+// let numericPageNumber: number = pageNumber as unknown as number; // type assertion or "as" data type
+//
+//// Working with DOM ////
