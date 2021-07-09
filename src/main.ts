@@ -1,39 +1,67 @@
-//// variables ////
-let hello: string = "world";
+//// Variables ////
+// let hello: string = "world";
 // hello = true; --> Error: Type 'true' is not assignable to type 'string'
 //
-//// functions ////
-const getFullName = (name: string, surname: string): string => {
-    return name + " " + surname;
-    // return true; --> Error: Type 'true' is not assignable to type 'string'
-};
+//// Functions ////
+// const getFullName = (name: string, surname: string): string => {
+//     return name + " " + surname;
+//     // return true; --> Error: Type 'true' is not assignable to type 'string'
+// };
 
-console.log(getFullName("Maisha", "Fatema"));
+// console.log(getFullName("Maisha", "Fatema"));
 //
-//// interfaces ////
+//// Interfaces ////
 // Interfaces in TS help to describe entities
 // By default all properties inside interface mandatory
-// Postfix for all interfaces to avoid confusion with class names e.g. 'interface IUser' and 'class User'
-interface IUser {
-    name: string;
-    age?: number;
-    getMessage(): string;
-}
+// Prefix or postfix for all interfaces to avoid confusion with class names e.g. 'interface IUser' and 'class User'
+// interface IUser {
+//     name: string;
+//     age?: number;
+//     getMessage(): string;
+// }
 
-const user: IUser = {
-    name: "Abrar",
-    age: 36,
-    getMessage() {
-        return "Hello " + this.name;
-    },
-};
+// const user: IUser = {
+//     name: "Abrar",
+//     age: 36,
+//     getMessage() {
+//         return "Hello " + this.name;
+//     },
+// };
 
-const user2: IUser = {
-    name: "Anika",
-    getMessage() {
-        return "Hello " + this.name;
-    },
-};
+// const user2: IUser = {
+//     name: "Anika",
+//     getMessage() {
+//         return "Hello " + this.name;
+//     },
+// };
 
-console.log(user.name);
-console.log(user.getMessage());
+// console.log(user.name);
+// console.log(user.getMessage());
+//
+//// Types, Unions and Type Aliases ////
+// Union operator to combine data types
+// Types and interfaces written in capital
+// type ID = string;
+// type PopularTag = string;
+// type MaybePopularTag = PopularTag | null;
+
+// interface UserInterface {
+//     id: ID;
+//     name: string;
+//     surname: string;
+// }
+
+// let username: string = "alex";
+
+// let pageName: string | number = "1";
+
+// let errorMessage: string | null = null;
+
+// let user: UserInterface | null = null;
+
+// // const popularTags: string[] = ["dragon", "coffee"];
+// const popularTags: PopularTag[] = ["dragon", "coffee"];
+
+// const dragonsTags: MaybePopularTag = "dinosaur";
+//
+//// Any/Void/Never/Unknown
