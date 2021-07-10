@@ -79,4 +79,4 @@
 // // let numericPageNumber: number = pageNumber as number; --> Error: Conversion/assertion from 'string' to 'number' maybe mistake --> help to solve issue
 // let numericPageNumber: number = pageNumber as unknown as number; // type assertion or "as" data type
 //
-//// Working with DOM ////
+//// Working with DOM //// (moved to new file)
