@@ -118,3 +118,32 @@
 //
 //// Enums in TS ////
 //
+// "enum" - reserved word to create enumerable
+// Names with capital letter is default code style
+// Values incremented from zero
+// Can use enum as value and data type
+// Can have enums with only keys or key-value (string) pairs
+// Use prefix or postfix in enum names like for interface names
+//
+var statuses = {
+    notStarted: 0,
+    inProgress: 1,
+    done: 2
+};
+console.log(statuses.inProgress); // logs 1
+// enum Status {
+//     NotStarted,
+//     InProgress,
+//     Done,
+// }
+var StatusEnum;
+(function (StatusEnum) {
+    StatusEnum["NotStarted"] = "Not started";
+    StatusEnum["InProgress"] = "In progress";
+    StatusEnum["Done"] = "Done";
+})(StatusEnum || (StatusEnum = {}));
+console.log(StatusEnum.InProgress); // also logs 1 (for no values set in enum) OR "In progress" for enum with key-value pairs
+var notStartedStatus = StatusEnum.NotStarted;
+// notStartedStatus = "foo"; // Error: cannot assign anything other than keys of type Status
+notStartedStatus = StatusEnum.Done;
+console.log(notStartedStatus);
