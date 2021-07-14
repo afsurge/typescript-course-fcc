@@ -1,3 +1,21 @@
+//// TS ////
+// TS extension to JS - most popular static-type extension for JS
+// Getting missing parts of JS - data types
+// JS dynamically typed language - easy for small/medium apps - can break only at runtime - for beginners
+// Get more safety with TS
+// 1. Errors in transpiling not runtime (transpile = translate + compile)
+// Get errors earlier, but also some at runtime possible
+// 2. Difficult to maintain, scale JS
+// Describe only with objects, arrays, strings, etc.
+// No data types, cannot create entities, entities with some specific field
+// TS helps to work with entities
+// TS superset of JS - has everthing from JS plus extension with data types
+// TS cannot run in browsers - browsers do not support - need to transpile into JS (similar to Babbel)
+// Can switch JS project into TS file by file - not a diff language - TS and JS will work together
+// Popular in companies - more safety
+// Write better code
+// TS transpiles to ES3 by default
+//
 //// Variables ////
 // let hello: string = "world";
 // hello = true; --> Error: Type 'true' is not assignable to type 'string'
@@ -34,7 +52,7 @@
 // console.log(user.name);
 // console.log(user.getMessage());
 //
-//// Types, Unions and Type Aliases ////
+//// Unions and Type Aliases ////
 // Union operator to combine data types
 // Types and interfaces written in capital
 // type ID = string;
