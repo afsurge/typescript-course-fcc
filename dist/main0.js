@@ -73,7 +73,7 @@
 //
 //// Any/Void/Never/Unknown
 // Void: nothing is returned - set of undefined or null
-// Any: should not use - any type turns off TS checks - not a soln but start of bigger problems
+// Any: should not use - turns off TS checks - not a soln but start of bigger problems
 // Never: function with never cannot be executed to the end
 // Unknown: from TS3 - cannot assign unknown directly in other type - good alternative for "any"
 // Bonus: "as" operator makes type assertion
