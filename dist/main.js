@@ -23,7 +23,7 @@
 // // Everything public by default - props and methods can be accessed inside and outside class
 // // Private - can use only inside class
 // // Protected - can use in class and it's children
-// // readonly in TS - useful for making constants inside class - cannot modify
+// // readonly in TS - useful for making constants inside class - can set only in constructor - cannot modify
 // // static properties - not avaiable from instances but only in class themselves
 // // Inheritance in TS
 // //
